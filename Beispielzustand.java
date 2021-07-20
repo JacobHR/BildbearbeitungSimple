@@ -13,10 +13,16 @@ import org.junit.Test;
  */
 public class Beispielzustand
 {
+    private Mehrpixeloperationen mehrpixe1;
     private Picture p1;
     private GeometrischeBildoperationen sHori;
     private GeometrischeBildoperationen sVerti;
     private GeometrischeBildoperationen dLinks;
+
+    
+    
+    
+    
 
     /**
      * Konstruktor fuer die Test-Klasse Beispielzustand
@@ -33,14 +39,15 @@ public class Beispielzustand
     @Before
     public void setUp()
     {
+        mehrpixe1 = new Mehrpixeloperationen();
         p1 = new Picture("iris.jpg");
         p1.display();
-        sHori = new GeometrischeBildoperationen();
-        sHori.setOperation(1);
-        sVerti = new GeometrischeBildoperationen();
-        sVerti.setOperation(2);
-        dLinks = new GeometrischeBildoperationen();
-        dLinks.setOperation(3);
+        // sHori = new GeometrischeBildoperationen();
+        // sHori.setOperation(1);
+        // sVerti = new GeometrischeBildoperationen();
+        // sVerti.setOperation(2);
+        // dLinks = new GeometrischeBildoperationen();
+        // dLinks.setOperation(3);
     }
 
     /**
@@ -52,4 +59,16 @@ public class Beispielzustand
     public void tearDown()
     {
     }
+
+    @Test
+    public void pt1()
+    {
+    }
+
+    @Test
+    public void p1()
+    {
+    }
 }
+
+
